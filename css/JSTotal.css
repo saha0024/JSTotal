@@ -1,0 +1,127 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0 0 100px;
+  /* bottom = footer height */ }
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #333333;
+  clear: both; }
+
+.clearfix:after, .col-container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container {
+  max-width: 800px;
+  background-color: #abc;
+  margin: 5% auto; }
+
+.col-4 {
+  position: relative;
+  text-align: center;
+  color: #FF4000;
+  background: #04B45F;
+  min-height: 100px;
+  float: left;
+  width: 21.25%;
+  margin-left: 5%; }
+  .col-4:first-child {
+    margin-left: 0; }
+
+.col-3 {
+  background: #0080FF;
+  min-height: 100px;
+  float: left;
+  height: 100%;
+  color: yellow;
+  width: 32%;
+  margin-left: 2%; }
+  .col-3:first-child {
+    margin-left: 0; }
+
+.focal {
+  position: relative;
+  text-align: center; }
+
+.col-4:hover button {
+  font-size: 2.2rem;
+  color: #06c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+
+.col-3 fade {
+  width: 483px;
+  height: 298px;
+  background: #676470;
+  transition: all 0.3s ease; }
+
+.fade {
+  opacity: 0.5; }
+
+.fade:hover {
+  opacity: 1; }
+
+.circle:hover {
+  border-radius: 50%; }
+
+.rotate1:hover {
+  -webkit-transform: rotateZ(30deg);
+  -ms-transform: rotateZ(30deg);
+  transform: rotateZ(30deg); }
+
+.rotate:hover {
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg); }
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .col-3 {
+    float: left;
+    margin: 2% !Important;
+    width: 46%;
+    overflow: hidden; }
+
+  .col-3:nth-child(3) {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    overflow: hidden; }
+
+  .col-4:nth-child(odd) {
+    clear: both;
+    float: left;
+    margin: 3%;
+    width: 300px;
+    overflow: hidden; }
+
+  .col-4:nth-child(even) {
+    float: left;
+    margin: 3%;
+    width: 300px;
+    overflow: hidden; } }
+@media screen and (max-width: 599px) {
+  .col-3 {
+    float: left;
+    margin: 2% !Important;
+    width: 50%;
+    overflow: hidden; }
+
+  .col-4 {
+    float: left;
+    margin: 2% !Important;
+    width: 50%;
+    overflow: hidden; } }
+
+/*# sourceMappingURL=JSTotal.css.map */
